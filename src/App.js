@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from 'react-bootstrap'
+import ImageSlider from './components/Slider'
+import './styles/App.scss'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Container className='carousel'>
+            <h1 className='slider_title'>React Image Carrousel</h1>
+            <ImageSlider />
+        </Container>
+    )
 }
 
-export default App;
+export default App
